@@ -1,0 +1,7 @@
+﻿
+namespace Paper
+{
+    class PaperUtilities
+    {
+    }
+}

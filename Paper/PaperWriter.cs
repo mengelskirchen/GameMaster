@@ -1,0 +1,8 @@
+﻿
+
+namespace Paper
+{
+    class PaperWriter
+    {
+    }
+}
