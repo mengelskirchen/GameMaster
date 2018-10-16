@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Paper
 {
-    public class Paper
+    public class Class1
     {
     }
 }

@@ -78,5 +78,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PaperEditor\PaperEditor.csproj">
+      <Project>{a146488b-14ab-41e3-8217-466d222237d1}</Project>
+      <Name>PaperEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PaperViewer\PaperViewer.csproj">
+      <Project>{4b019cff-a2a4-4dc7-b966-8c9528972f17}</Project>
+      <Name>PaperViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Paper\Paper.csproj">
+      <Project>{199b712f-1315-4742-9767-e9886e1cde4a}</Project>
+      <Name>Paper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
