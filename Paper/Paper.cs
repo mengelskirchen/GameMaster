@@ -1,24 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
 
 namespace Paper
 {
     public class Paper
     {
-        private Dictionary<String, String> paperValues;
+        private Rectangle paperSize { get; set; }
+        private Dictionary<String, String> paperValues { get; set; }
+        private Dictionary<Image, Rectangle> paperImages { get; set; }
+        private Dictionary<String, Component> paperFields { get; set; }
 
         public Paper() {
 
-        }
-
-        public List<String>  getValueKeys() {
-            return new List<string>(paperValues.Keys);
-        }
-
-        public String getValue(String key) {
-            String outp = "";
-            paperValues.TryGetValue(key, out outp);
-            return outp;
         }
 
     }
