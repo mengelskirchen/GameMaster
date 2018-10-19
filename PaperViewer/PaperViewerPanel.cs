@@ -12,28 +12,6 @@ namespace PaperViewer {
 
     public partial class PaperViewerPanel : Component {
 
-        private Paper.Paper paper;
-
-        public PaperViewerPanel() {
-            InitializeComponent();
-        }
-
-        public PaperViewerPanel(Paper.Paper paper) {
-            this.paper = paper;
-        }
-
-        public PaperViewerPanel(IContainer container) {
-            container.Add(this);
-
-            InitializeComponent();
-        }
-
-        public void setPaper(Paper.Paper paper) {
-            this.paper = paper;
-        }
-
-        public Paper.Paper getPaper() {
-            return this.paper;
-        }
+        
     }
 }
