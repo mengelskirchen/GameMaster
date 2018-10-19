@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PdfSharp.Forms;
 
 namespace PaperViewer {
 
-    public partial class PaperViewerPanel : PdfSharp.Forms.PagePreview {
+    public partial class PaperViewerPanel : Component {
 
         private Paper.Paper paper;
 
