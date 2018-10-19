@@ -4,13 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4B019CFF-A2A4-4DC7-B966-8C9528972F17}</ProjectGuid>
+    <ProjectGuid>{F8967B99-05A6-43E1-85AB-3389B0AFCCB8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PaperViewer</RootNamespace>
-    <AssemblyName>PaperViewer</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>TestUmgebung</RootNamespace>
+    <AssemblyName>TestUmgebung</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,23 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainFrame.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainFrame.Designer.cs">
-      <DependentUpon>MainFrame.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PaperViewerPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PaperViewerPanel.Designer.cs">
-      <DependentUpon>PaperViewerPanel.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainFrame.resx">
-      <DependentUpon>MainFrame.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,12 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Paper\Paper.csproj">
-      <Project>{199b712f-1315-4742-9767-e9886e1cde4a}</Project>
-      <Name>Paper</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
